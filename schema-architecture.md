@@ -19,7 +19,6 @@ flowchart LR
   subgraph Dashboard
     UIAdmin2[Admin Dashboard]
     UIManager2[Manager Dashboard]
-    Cache2[(Local cache)]
   end
   subgraph Rest_Modules
     RESTApointment[Apointment]
