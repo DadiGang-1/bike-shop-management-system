@@ -15,7 +15,7 @@ MySQL uses JPA entities for structured relational data while MongoDB uses docume
 7. **Response Rendering:** The resulting models (or DTOs) are returned to the controller to either populate dynamic Thymeleaf HTML templates or serialize into JSON HTTP responses for API clients.
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph Dashboard
     UIAdmin2[Admin Dashboard]
     UIManager2[Manager Dashboard]
@@ -36,6 +36,7 @@ flowchart LR
         DB7[Admin]
         DB8[Payments]
         DB9[Specialists_available_times]
+        direction LR
     end
     subgraph MongoDB_Models
         DB01[Reviews]
@@ -43,6 +44,7 @@ flowchart LR
         DB03[Messages]
         DB04[Specialist_advices]
         DB05[Confirmation_emails]
+        direction LR
     end
     MySQL_Models1[MySQL_Models]
     MongoDB_Models1[MongoDB_Models]
